@@ -1,0 +1,186 @@
+*{
+	margin:0;
+	padding: 0;
+}
+body {
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  font-family: 'Dancing Script', cursive;
+}
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	overflow: hidden;
+}
+section .wave{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 300px;
+	background:url(wave.png);
+}
+section .wave.wave1
+{
+	animation: animate 30s linear infinite;
+	z-index: 1000;
+	opacity: 1;
+	animation-delay: 0s;
+	bottom: 0;
+}
+section .wave.wave2
+{
+	animation: animate2 15s linear infinite;
+	z-index: 999;
+	opacity: 0.5;
+	animation-delay: -5s;
+	bottom: 10px;
+}
+section .wave.wave3
+{
+	animation: animate 30s linear infinite;
+	z-index: 998;
+	opacity: 0.2;
+	animation-delay: -2s;
+	bottom: 15px;
+}
+section .wave.wave4
+{
+	animation: animate2 5s linear infinite;
+	z-index: 997;
+	opacity: 0.7;
+	animation-delay: -5s;
+	bottom: 20px;
+}
+
+@keyframes animate2{
+	0%{
+		background-position-x: 0; 
+	}
+	100%{
+		background-position-x: -1000px; 
+	}
+}
+#header-nav{
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	background: url('asd.png');
+	width: 100%;
+	height: 21vh;
+	margin-right: -10px;
+	border-radius: 0;
+	border: 0;
+}
+#logo-img{
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand h1{
+	/*font-family: 'Lora', serif;*/
+	color: /*#000080*/yellow;
+	font-size: 1.75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.36;
+
+}
+.navbar-brand p{
+	color: /*#000*/pink;
+	/*text-transform: uppercase;*/
+	font-size: 1em;
+	margin-top: 2px;
+}
+.navbar-brand p span{
+	vertical-align: middle;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top: -20px; 
+}
+#nav-list{
+	margin-top: 15px;
+	margin-right: -120px;
+}
+
+
+#nav-list a{
+	color: yellow;
+	font-size: 25px;
+	text-align: center;
+}
+
+.container2 {
+	width: 300px;
+	height: 1px;
+	background: #123;
+	color: #fff;
+	margin-top: 0px;
+	top: 40%;
+	left: 45%;
+	position:absolute;
+	transform: translate(-30%, -55%);
+	box-sizing: border-box;
+}
+
+.container2 p  {
+	margin:100;
+	margin-top: 10px;
+	padding: 0;
+	color: #000;
+	font-weight: bold;
+}
+.container2 input[type='text']
+{
+	width: 150%;
+	top: 50%;
+	color: #000;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+.container2 input[type='submit']
+{
+	width: 170%;
+	top: 50%;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+.container2 input[type="submit"]:hover
+{
+	cursor: pointer;
+	text-align: center;
+	background: #3586ff;
+	color: black;
+}
+.container2 p input[type="submit"]
+{
+	border:none;
+	outline: none;
+	text-align: center;
+	height: 40px;
+	padding-left: 100;
+	background: red;
+	color: #000;
+	font-size: 18px;
+	border-radius: 20px;
+}
+.container2 p input[type="submit"]:hover
+{
+	cursor: pointer;
+	text-align: center;
+	background: #ffc107;
+	color: black;
+}

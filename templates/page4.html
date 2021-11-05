@@ -1,0 +1,58 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<div style="text-align: center;">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stock Market Analysis</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/styled.css')}}">
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap" rel="stylesheet">
+</head>
+ <body>
+ <header>
+	<nav id="header-nav" class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<a class="pull-left visible-md visible-lg">
+					<div id="logo-img" alt="Logo image"></div>
+				</a>
+				<div class="navbar-brand">
+					<h1>Stock Market Analysis</h1>
+					<p>
+						<span>This is a website to analyse your favorite stock</span>
+					</p>
+				</div>
+			</div>
+			<div id="collapsable-nav" class="collapse navbar-collapse" >
+					<u1 id="nav-list" class="nav navbar-nav navbar-right">
+						<li>
+							<a href="{{url_for('about')}}">
+								<span class="glyphicon glyphicon-info-sign"></span>
+								<br class="hidden-xs">About Us
+							</a>
+						</li>
+					</u1>
+			</div>
+		</div>
+	</nav>
+</header>
+<p>
+<h1>{{var}}</h1>
+</p>
+<img src={{file}}/>
+<div class="animation-area">
+		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+</div>
+</body>
+</div>
+</html>

@@ -1,0 +1,185 @@
+* {
+	margin:0;
+	padding: 0;
+}
+body {
+  font-size: 16px;
+  background: linear-gradient(to left, #8942a8, #ba382f);
+  background-color: #fff;
+  font-family: 'Dancing Script';
+}
+
+#header-nav{
+	background-color: #fff;
+	background: linear-gradient(to left, #8942a8, #ba382f);
+	margin-right: -10px;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img{
+	background: url('../images/restaurant-logo_large.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand h1{
+	/*font-family: 'Lora', serif;*/
+	color: yellow;
+	font-size: 1.75em;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	margin-top: 0;
+	margin-bottom: 0;
+	line-height: 1.36;
+
+}
+.navbar-brand p{
+	color: cyan;
+	/*text-transform: uppercase;*/
+	font-size: 1em;
+	margin-top: 2px;
+}
+.navbar-brand p span{
+	vertical-align: middle;
+}
+.navbar-header button.navbar-toggle{
+	clear: both;
+	margin-top: -20px; 
+}
+#nav-list{
+	margin-top: 15px;
+	margin-right: -120px;
+}
+
+
+#nav-list a{
+	color: yellow;
+	font-size: 25px;
+	text-align: center;
+}
+.animation-area {
+	background: linear-gradient(to left, #8942a8, #ba382f);
+}
+.container4 {
+	width: 300px;
+	height: 1px;
+	color: #fff;
+	top: 25%;
+	left: 45%;
+	position:absolute;
+	transform: translate(-30%, -55%);
+}
+
+h2{
+	left:50%;
+	width: 360px;
+	text-align: center;
+	height: 40px;
+	padding-left: 100;
+	color: #ffffe0;
+	font-size: 22px;
+	font-weight: bolder;
+}
+.container4 input[type="submit"]
+{
+	border:none;
+	left:50%;
+	top:10%;
+	outline: none;
+	text-align: center;
+	width: 400px;
+	height: 40px;
+	padding-left: 100;
+	background: #00fa9a;
+	color: #000;
+	font-size: 26px;
+	border-radius: 20px;
+}
+.container4 input[type="submit"]:hover
+{
+	cursor: pointer;
+	text-align: center;
+	background: red;
+	color: black;
+}
+
+body input[class="box-area"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.box-area li{
+	position: absolute;
+	display: block;
+	list-style: none;
+	width: 25px;
+	height: 25px;
+	background: rgba(255,255,255,0.2);
+	animation: animate 20s linear infinite;
+	bottom: -150px;
+}
+
+.box-area li:nth-child(1){
+	left: 86%;
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+}
+
+.box-area li:nth-child(2){
+	left: 12%;
+	width: 30px;
+	height: 30px;
+	animation-delay: 1.5s;
+	animation-duration: 10s;
+}
+
+.box-area li:nth-child(3){
+	left: 70%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 5.5s;
+}
+
+.box-area li:nth-child(4){
+	left: 42%;
+	width: 150px;
+	height: 150px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+
+.box-area li:nth-child(5){
+	left: 65%;
+	width: 40px;
+	height: 40px;
+	animation-delay: 0s;
+}
+
+.box-area li:nth-child(6){
+	left: 15%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 3.5s;
+}
+@keyframes animate{
+	0%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	100%{
+		transform: translateY(-800px) rotate(360deg);
+		opacity: 1;
+	}
+}

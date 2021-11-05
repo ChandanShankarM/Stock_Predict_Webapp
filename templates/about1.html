@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<div style="text-align: center;">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+	<h1>Our Team</h1>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/bootstrap.min.css')}}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='styles/new3.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;562;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+		
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <img src="{{ url_for('static', filename='images/chan.png')}}">
+                <div class="team-content">
+                    <h3 class="title">Chandan Shankar M</h3>
+                    <span class="post">B.Tech, PESU</span>
+                    
+                </div>
+            </div>
+        </div>
+		<div class="col-md-4 col-sm-6">
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="our-team">
+                <img src="{{ url_for('static', filename='images/hem.JPG')}}">
+                <div class="team-content">
+                    <h3 class="title">Hemanth Nag</h3>
+                    <span class="post">B.Tech, PESU</span>
+          
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
